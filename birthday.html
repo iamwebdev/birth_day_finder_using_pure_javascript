@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Birthday Cal</title>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400,300|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/task.css">
+  </head>
+  <body>
+    <div class="app">
+      <h1 class="app__header">Birthday Cal &ndash; Work Area</h1>
+      <div class="app__content">
+        <div id="work-area">
+          <div class="calendar-container">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                  <div class="col-md-3 col-sm-3 col-xs-4">
+                      <div class="card">
+                        <div class="card-header">
+                          <h2>SUN</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row" id="Sunday"> 
+                              <img src="img/capture.PNG" alt="image" style="height: 150px; width: 200px;">
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <h2>MON</h2>
+                      </div>
+                      <div class="card-body">
+                          <div class="row" id="Monday"> 
+                            <img src="img/capture.PNG" alt="image" style="height: 150px; width: 200px;">                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <h2>TUE</h2>
+                      </div>
+                      <div class="card-body">
+                        <div class="row" id="Tuesday">  
+                          <img src="img/capture.PNG" alt="image" style="height: 150px; width: 200px;">                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <h2>WED</h2>
+                      </div>
+                      <div class="card-body">
+                          <div class="row" id="Wednesday">
+                          <img src="img/capture.PNG" alt="image" style="height: 150px; width: 200px;">
+                            </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                      <div class="card">
+                        <div class="card-header">
+                          <h2>Thu</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row" id="Thursday">
+                              <img src="img/capture.PNG" alt="image" style="height: 150px; width: 200px;">
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                      <div class="card">
+                        <div class="card-header">
+                          <h2>FRI</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row" id="Friday"> 
+                              <img src="img/capture.PNG" alt="image" style="height: 150px; width: 200px;">             
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                      <div class="card">
+                        <div class="card-header">
+                          <h2>SAT</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row" id="Saturday">
+                              <img src="img/capture.PNG" alt="image" style="height: 150px; width: 200px;">
+                              </div>
+                        </div>
+                      </div>
+                    </div>                      
+                </div>
+            </div>
+          </div>
+
+    <div class="app__inputs">
+    <textarea class="app__txt js-json" id="json-input" placeholder="Paste the json here.">[
+    {
+      "name": "Tyrion Lannister",
+      "birthday": "12/02/1978"
+    }, {
+      "name": "Cersei Lannister",
+      "birthday": "11/30/1975"
+    }, {
+      "name": "Daenerys Targaryen",
+      "birthday": "11/24/1991"
+    }, {
+      "name": "Arya Stark",
+      "birthday": "11/25/1996"
+    }, {
+      "name": "Jon Snow",
+      "birthday": "12/03/1989"
+    }, {
+      "name": "Sansa Stark",
+      "birthday": "08/15/1992"
+    }, {
+      "name": "Jorah Mormont",
+      "birthday": "12/16/1968"
+    }, {
+      "name": "Jaime Lannister",
+      "birthday": "12/06/1975"
+    }, {
+      "name": "Sandor Clegane",
+      "birthday": "11/07/1969"
+    }, {
+      "name": "Tywin Lannister",
+      "birthday": "10/12/1951"
+    }, {
+      "name": "Theon Greyjoy",
+      "birthday": "12/31/1989"
+    }, {
+      "name": "Samwell Tarly",
+      "birthday": "12/07/1990"
+    }, {
+      "name": "Joffrey Baratheon",
+      "birthday": "06/12/1992"
+    }, {
+      "name": "Catelyn Stark",
+      "birthday": "12/03/1962"
+    }, {
+      "name": "Bran Stark",
+      "birthday": "12/02/1995"
+    }, {
+      "name": "Petyr Baelish",
+      "birthday": "11/20/1974"
+    }, {
+      "name": "Robb Stark",
+      "birthday": "11/28/1986"
+    }, {
+      "name": "Brienne of Tarth",
+      "birthday": "11/27/1985"
+    }, {
+      "name": "Margaery Tyrell",
+      "birthday": "12/02/1989"
+    }, {
+      "name": "Stannis Baratheon",
+      "birthday": "09/14/1971"
+    }, {
+      "name": "Davos Seaworth",
+      "birthday": "02/13/1973"
+    }, {
+      "name": "Tormund Giantsbane",
+      "birthday": "12/14/1974"
+    }, {
+      "name": "Jeor Mormont",
+      "birthday": "11/01/1955"
+    }, {
+      "name": "Eddard Stark",
+      "birthday": "12/02/1963"
+    }, {
+      "name": "Khal Drogo",
+      "birthday": "12/05/1980"
+    }, {
+      "name": "Ramsay Bolton",
+      "birthday": "12/05/1976"
+    }, {
+      "name": "Robert Baratheon",
+      "birthday": "12/02/1965"
+    }, {
+      "name": "Daario Naharis",
+      "birthday": "12/02/1985"
+    }, {
+      "name": "Viserys Targaryen",
+      "birthday": "12/06/1984"
+    }
+]
+  </textarea>
+
+            <div class="app__actions">
+              <label>Year</label>
+              <select id="year" class="js-year-input"  onchange="myFunction()">
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016" selected>2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-line app__border" />
+
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+  <script>
+  var data = [
+    {
+      "name": "Tyrion Lannister",
+      "birthday": "12/02/1978"
+    }, {
+      "name": "Cersei Lannister",
+      "birthday": "11/30/1975"
+    }, {
+      "name": "Daenerys Targaryen",
+      "birthday": "11/24/1991"
+    }, {
+      "name": "Arya Stark",
+      "birthday": "11/25/1996"
+    }, {
+      "name": "Jon Snow",
+      "birthday": "12/03/1989"
+    }, {
+      "name": "Sansa Stark",
+      "birthday": "08/15/1992"
+    }, {
+      "name": "Jorah Mormont",
+      "birthday": "12/16/1968"
+    }, {
+      "name": "Jaime Lannister",
+      "birthday": "12/06/1975"
+    }, {
+      "name": "Sandor Clegane",
+      "birthday": "11/07/1969"
+    }, {
+      "name": "Tywin Lannister",
+      "birthday": "10/12/1951"
+    }, {
+      "name": "Theon Greyjoy",
+      "birthday": "12/31/1989"
+    }, {
+      "name": "Samwell Tarly",
+      "birthday": "12/07/1990"
+    }, {
+      "name": "Joffrey Baratheon",
+      "birthday": "06/12/1992"
+    }, {
+      "name": "Catelyn Stark",
+      "birthday": "12/03/1962"
+    }, {
+      "name": "Bran Stark",
+      "birthday": "12/02/1995"
+    }, {
+      "name": "Petyr Baelish",
+      "birthday": "11/20/1974"
+    }, {
+      "name": "Robb Stark",
+      "birthday": "11/28/1986"
+    }, {
+      "name": "Brienne of Tarth",
+      "birthday": "11/27/1985"
+    }, {
+      "name": "Margaery Tyrell",
+      "birthday": "12/02/1989"
+    }, {
+      "name": "Stannis Baratheon",
+      "birthday": "09/14/1971"
+    }, {
+      "name": "Davos Seaworth",
+      "birthday": "02/13/1973"
+    }, {
+      "name": "Tormund Giantsbane",
+      "birthday": "12/14/1974"
+    }, {
+      "name": "Jeor Mormont",
+      "birthday": "11/01/1955"
+    }, {
+      "name": "Eddard Stark",
+      "birthday": "12/02/1963"
+    }, {
+      "name": "Khal Drogo",
+      "birthday": "12/05/1980"
+    }, {
+      "name": "Ramsay Bolton",
+      "birthday": "12/05/1976"
+    }, {
+      "name": "Robert Baratheon",
+      "birthday": "12/02/1965"
+    }, {
+      "name": "Daario Naharis",
+      "birthday": "12/02/1985"
+    }, {
+      "name": "Viserys Targaryen",
+      "birthday": "12/06/1984"
+    }
+]
+
+function myFunction(){
+  var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  var colors = ['red','green','blue','yellow','pink','pink','orange','gray','cyan','magenta','skyblue','gray','beige','lightyellow','lightgray','lightgreen','brown','tan','brown','lightpink','orange','red','olive','yellow','lime','yellow','aqua','silver','gold'];
+
+  var year = document.getElementById("year").value;
+  $('#Sunday').html('');
+  $('#Monday').html('');
+  $('#Tuesday').html('');
+  $('#Wednesday').html('');
+  $('#Thursday').html('');
+  $('#Friday').html('');
+  $('#Saturday').html('');
+
+  for(var i=0; i<data.length; i++)
+  {
+    var tempHtml = '';
+    var birthDate = data[i]['birthday'].split('/');
+    birthDate[2] = year;
+    var newDate = birthDate.join('/')
+    var formattedDate = new Date(newDate);
+    var day = days[formattedDate.getDay()];
+    var name = data[i]['name'].split(' ');
+    var firstName = name[0][0];
+    var lastName = name[1][0];
+    var shortName = firstName + lastName;
+    tempHtml += `<div class="col-md-4 col-sm-4 col-xs-4" style="color: black; font-weight: bolder;background-color: ${(colors[i])}; border:1px solid green; height: 40px; padding: 10px;"><span>${(shortName)}</span></div>`;
+    $('#'+day).append(tempHtml)
+  }
+}
+    </script>
+  </body>
+</html>

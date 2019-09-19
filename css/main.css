@@ -1,0 +1,225 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+    _____________       ___________ _________              _________      ______
+    ___  __ )__(_)________  /___  /_______  /_____ _____  ___  ____/_____ ___  /
+    __  __  |_  /__  ___/  __/_  __ \  __  /_  __ `/_  / / /  /    _  __ `/_  /
+    _  /_/ /_  / _  /   / /_ _  / / / /_/ / / /_/ /_  /_/ // /___  / /_/ /_  /
+    /_____/ /_/  /_/    \__/ /_/ /_/\__,_/  \__,_/ _\__, / \____/  \__,_/ /_/
+
+*/
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.5;
+    background: #eaf0f2;
+    background: #27303a;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    padding: 0 0 0 30px;
+}
+
+h4 {
+    margin: 1em 0;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+h4 + p {
+    margin-top: -.5em;
+}
+
+p + h4 {
+    margin-top: 2em;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.border-line {
+    height: 1px;
+    border: none;
+    margin: 36px auto;
+    background: -moz-linear-gradient(left, rgba(117,136,151,0) 0%, rgba(117,136,151,1) 50%, rgba(117,136,151,0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(117,136,151,0)), color-stop(50%, rgba(117,136,151,0.3)), color-stop(100%, rgba(117,136,151,0)));
+    background: -webkit-linear-gradient(left, rgba(117,136,151,0) 0%, rgba(117,136,151,0.3) 50%, rgba(117,136,151,0) 100%);
+    background: -o-linear-gradient(left, rgba(117,136,151,0) 0%, rgba(117,136,151,0.3) 50%, rgba(117,136,151,0) 100%);
+    background: -ms-linear-gradient(left, rgba(117,136,151,0) 0%, rgba(117,136,151,0.3) 50%, rgba(117,136,151,0) 100%);
+    background: linear-gradient(to right, rgba(117,136,151,0) 0%, rgba(117,136,151,0.3) 50%, rgba(117,136,151,0) 100%);
+}
+
+code, pre {
+    font-size: 12px;
+    font-family: 'Source Code Pro', monospace;
+    background: #f5fafc;
+    padding: 1px 6px;
+}
+
+
+/* ==========================================================================
+   Task intro page styles
+   ========================================================================== */
+
+.faq,
+.app {
+    width: 1024px;
+    margin: 0 auto;
+    background: #eaf0f2;
+}
+
+.faq__content,
+.app__content {
+    padding: 24px 24px 120px;
+    color: #5b6a76;
+    overflow: auto;
+}
+
+.faq__header,
+.app__header {
+    margin: 0;
+    padding: 24px 38px;
+    background: #1789ec;
+    color: #ffffff;
+    font-weight: 300;
+
+}
+
+.intro {
+    display: -webkit-flex;
+    display: flex;
+    font-size: 14px;
+}
+
+.intro__task {
+    -webkit-flex: 5;
+    flex: 5;
+    margin: 24px;
+    padding: 12px 24px;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.intro__example {
+    margin-top: 12px;
+    width: 100%;
+}
+
+.intro__helpers {
+    margin-top: 24px;
+    -webkit-flex: 2;
+    flex: 2;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.intro__helpers li {
+    margin-bottom: 24px;
+}
+
+.faq__border,
+.app__border {
+    max-width: 80%;
+}
+
+.cal__title {
+    margin: 0 0 48px;
+    padding-top: 54px;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* ==========================================================================
+   FAQ specific styles
+   ========================================================================== */
+
+.faq__question {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Work Area styles
+   ========================================================================== */
+
+.calendar-container {
+
+    /*
+       Temporary Styles
+       Please replace these when you start working on the task
+    */
+    background: #fff;
+    border: 2px dashed rgba(0, 0, 0, .2);
+    border-radius: 3px;
+    padding: 12px;
+    margin-bottom: 36px;
+    min-height: 160px;
+    text-align: center;
+    color: rgba(0, 0, 0, .5);
+    font-size: .75em;
+}
+
+.app__inputs {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.app__txt {
+    font-family: 'Source Code Pro', monospace;
+    border: 1px solid #ccd1d3;
+    border-radius: 3px;
+}
+
+.app__txt {
+    -webkit-flex: 3;
+    flex: 3;
+    font-size: 12px;
+    font-family: 'Source Code Pro', monospace;
+    border: 1px solid #ccd1d3;
+    border-radius: 3px;
+    margin: 0 24px 0 0;
+    padding: 12px;
+    width: 60%;
+    height: 300px;
+}
+
+.app__actions {
+    -webkit-flex: 2;
+    flex: 2;
+    margin-left: 24px;
+}
